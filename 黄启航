@@ -1,0 +1,61 @@
+第一次
+#include<stdio.h>
+int main()
+{
+    char a;
+    scanf_s("%c", &a);
+    printf("%c", a - 32);
+    return 0;
+}
+
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    double a, b, c, s, k;
+    scanf("%lf%lf%lf", &a, &b, &c);
+    s = (a + b + c) / 2;
+    k = sqrt(s * (s - a) * (s - b) * (s - c));
+    printf("%.1lf", k);
+    return 0;
+}
+第二次
+#include<stdio.h>
+int main()
+{
+    int year, m, c, b;
+    scanf("%d", &year);
+    m = year % 400;
+    c = year % 4;
+    b = year % 100;
+    if (m == 0)
+    {
+        printf("1");
+    }
+    else
+    {
+        if (c == 0 && b != 0)
+        {
+            printf("1");
+        }
+        else
+        {
+            printf("0");
+        }
+    }
+}
+
+#include<stdio.h>
+int main()
+{
+    int num;
+    scanf_s("%d",&num);
+    if(num<=1)
+    {
+        printf("Today,I ate %d apple",num);
+    }
+    else
+    {
+        printf("Today,I ate %d apples",num);
+    }
+}
